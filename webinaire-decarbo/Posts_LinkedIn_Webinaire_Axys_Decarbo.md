@@ -13,17 +13,17 @@ Ces deux posts annoncent le webinar sur le mode du teasing. Ils posent les enjeu
 
 > [#WEBINAR] Données fournisseurs : collectez moins, exploitez mieux
 >
-> Combien de questionnaires durabilité envoyez-vous à vos fournisseurs chaque année ?
-> Et combien de réponses sauriez-vous prouver ?
+> 30 secondes pour poser le problème. Une heure pour y répondre, le 24 novembre.
 >
-> La donnée fournisseur existe. Elle est souvent dispersée, hétérogène et utilisée une seule fois.
-> Demain, un auditeur ne regardera plus seulement ce que vous avez collecté, mais aussi comment c'est connecté et comment c'est contrôlé.
+> Côté achats, la donnée durabilité des fournisseurs a un coût : des campagnes de questionnaires à relancer, des fournisseurs sollicités plusieurs fois sur le même sujet, et des réponses qui finissent dans un fichier sans jamais servir à décider.
 >
-> Axys et Decarbo'Solution vous donnent rendez-vous le mardi 24 novembre à 11h pour aborder notamment ces 2️⃣ questions :
-> ➡️ Comment rendre une donnée carbone fournisseur authentifiée, tracée et reproductible ?
-> ➡️ Comment la réutiliser dans vos outils achats, plutôt que de la collecter à nouveau ?
+> L'enjeu n'est plus seulement de collecter. C'est d'obtenir une donnée utile, pas une donnée morte : une donnée que l'on peut justifier, puis réutiliser pour segmenter ses fournisseurs et arbitrer.
 >
-> Au programme : un sondage en direct, deux regards complémentaires et une checklist des premiers pas remise aux inscrits.
+> Pendant une heure, Axys et Decarbo'Solution croisent deux regards :
+> ➡️ celui des achats : quoi demander, à qui, et comment l'intégrer à vos outils ;
+> ➡️ celui de la donnée carbone : ce qu'il faut documenter pour qu'elle tienne dans le temps.
+>
+> Vos réponses au sondage en direct nourriront l'échange, et vous repartirez avec une checklist des premiers pas.
 >
 > 🗓️ Mardi 24 novembre 2026, 11h, en ligne
 > 🎙️ Maëva Signor (Axys) et Philippe Mangeard (Decarbo'Solution)
@@ -57,6 +57,23 @@ Ces deux posts annoncent le webinar sur le mode du teasing. Ils posent les enjeu
 > #Achats #AchatsResponsables #ISSA5000 #VSME #CSRD #Scope3
 
 ---
+
+## Répartition des messages entre les supports
+
+Chaque support porte ses propres messages, pour éviter que le texte répète le visuel :
+
+| Message | Vidéo | Post 1 | Carrousel | Post 2 |
+|---|---|---|---|---|
+| Question d'ouverture : combien de questionnaires, combien de réponses prouvables | ✓ | | ✓ | |
+| Constat : une donnée dispersée, hétérogène, peu réutilisable | ✓ | | ✓ | |
+| Ce que l'auditeur regardera : collecté, connecté, contrôlé | ✓ | | ✓ | |
+| « Collecter une fois, prouver, exploiter partout » | ✓ | | | |
+| Le coût pour les achats : relances, fournisseurs sursollicités, réponses inutilisées | | ✓ | | |
+| « Une donnée utile, pas une donnée morte » | | ✓ | | |
+| Deux regards : les achats et la donnée carbone | | ✓ | | |
+| Une même donnée, plusieurs usages | | | ✓ | ✓ |
+| Repère ISSA 5000 | ✓ | | ✓ | ✓ |
+| Les trois questions du programme | | | ✓ | ✓ |
 
 ## Conseils de publication
 

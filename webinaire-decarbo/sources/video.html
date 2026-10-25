@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Vidéo teasing webinaire Axys x Decarbo'Solution</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --vert: #008A8C; --fonce: #004C5D; --clair: #02AEB1; --blanc: #FFFFFF; --pale: #9CE6E7; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; font-family: 'Montserrat', sans-serif; color: var(--blanc); background: var(--fonce); }
+  #stage { position: relative; width: 1080px; height: 1350px; overflow: hidden; }
+  #bg { position: absolute; inset: -200px; background: radial-gradient(ellipse 60% 50% at 50% 50%, #02AEB1 0%, #008A8C 40%, #004C5D 100%); }
+  .scene { position: absolute; inset: 0; padding: 0 96px; display: flex; flex-direction: column; justify-content: center; opacity: 0; }
+  .el { opacity: 0; will-change: transform, opacity; }
+  .kicker { font-size: 26px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--pale); margin-bottom: 30px; }
+  .big { font-size: 66px; line-height: 1.14; font-weight: 800; }
+  .mid { font-size: 52px; line-height: 1.2; font-weight: 700; }
+  .hl { color: var(--pale); }
+  .card { background: rgba(255,255,255,.12); border-radius: 18px; padding: 34px 40px; margin-top: 22px; font-size: 50px; font-weight: 800; text-transform: uppercase; letter-spacing: .01em; }
+  .row { display: flex; align-items: center; gap: 30px; margin-top: 30px; font-size: 48px; font-weight: 700; }
+  .q { flex: none; width: 82px; height: 82px; border-radius: 50%; background: var(--blanc); color: var(--fonce); display: flex; align-items: center; justify-content: center; font-size: 46px; font-weight: 800; }
+  .repere { margin-top: 56px; font-size: 26px; line-height: 1.5; font-weight: 500; background: rgba(0,76,93,.6); border-radius: 14px; padding: 24px 30px; }
+  .slogan { font-size: 86px; line-height: 1.12; font-weight: 800; text-transform: uppercase; }
+  .tease { margin-top: 60px; font-size: 44px; font-weight: 600; color: var(--pale); }
+  .logo { height: 80px; width: auto; align-self: flex-start; display: block; margin-bottom: 70px; }
+  .title { font-size: 76px; line-height: 1.1; font-weight: 800; text-transform: uppercase; }
+  .title .pre { display: block; font-size: 46px; color: var(--pale); margin-bottom: 10px; }
+  .pill { display: inline-block; margin-top: 60px; background: var(--blanc); color: var(--fonce); border-radius: 60px; padding: 26px 46px; font-size: 42px; font-weight: 800; }
+  .duo { margin-top: 36px; font-size: 32px; font-weight: 600; }
+  .cta { margin-top: 70px; font-size: 34px; font-weight: 700; color: var(--pale); }
+  #foot { position: absolute; left: 96px; right: 96px; bottom: 70px; display: flex; align-items: center; gap: 30px; }
+  #foot .line { flex: 1; height: 2px; background: rgba(255,255,255,.5); }
+  #foot img { height: 40px; }
+  #bar { position: absolute; left: 0; bottom: 0; height: 8px; background: var(--clair); filter: brightness(1.3); width: 0; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="bg"></div>
+
+  <section class="scene" id="s1">
+    <div class="kicker el" data-in="0.2">Webinar · 24 novembre</div>
+    <div class="big el" data-in="0.5">Combien de questionnaires durabilité envoyez-vous à vos fournisseurs chaque année&nbsp;?</div>
+    <div class="mid el hl" data-in="2.6" style="margin-top:56px">Et combien de réponses sauriez&#8209;vous prouver&nbsp;?</div>
+  </section>
+
+  <section class="scene" id="s2">
+    <div class="kicker el" data-in="6.3">Aujourd'hui</div>
+    <div class="mid el" data-in="6.5">La donnée fournisseur est&nbsp;:</div>
+    <div class="card el" data-in="7.1" data-dx="-1">Dispersée</div>
+    <div class="card el" data-in="7.8" data-dx="1">Hétérogène</div>
+    <div class="card el" data-in="8.5" data-dx="-1">Peu réutilisable</div>
+  </section>
+
+  <section class="scene" id="s3">
+    <div class="kicker el" data-in="12.3">Demain</div>
+    <div class="big el" data-in="12.5">Un auditeur regardera&nbsp;:</div>
+    <div class="row el" data-in="13.3"><span class="q">?</span>ce que vous collectez</div>
+    <div class="row el" data-in="14.0"><span class="q">?</span>comment c'est connecté</div>
+    <div class="row el" data-in="14.7"><span class="q">?</span>comment c'est contrôlé</div>
+    <div class="repere el" data-in="15.7">Repère : l'ISSA 5000 devient la référence internationale de l'assurance durabilité en décembre 2026.</div>
+  </section>
+
+  <section class="scene" id="s4">
+    <div class="slogan el" data-in="18.9">Collecter<br>une fois.</div>
+    <div class="slogan el hl" data-in="19.7" style="margin-top:24px">Prouver.</div>
+    <div class="slogan el" data-in="20.5" style="margin-top:24px">Exploiter<br>partout.</div>
+    <div class="tease el" data-in="21.6">Comment&nbsp;? On en parle.</div>
+  </section>
+
+  <section class="scene" id="s5">
+    <img class="logo el" data-in="23.8" src="logo_axys.png" alt="Axys">
+    <div class="kicker el" data-in="24.0">Webinar · Axys × Decarbo'Solution</div>
+    <div class="title el" data-in="24.3"><span class="pre">Données fournisseurs</span>Collectez moins, exploitez mieux</div>
+    <div><span class="pill el" data-in="25.2">Mardi 24 novembre · 11h</span></div>
+    <div class="duo el" data-in="25.8">En ligne · 45 min + 15 min de questions</div>
+    <div class="cta el" data-in="26.6">Inscription : lien dans le post →</div>
+  </section>
+
+  <div id="foot"><div class="line"></div><img src="logo_axys.png" alt="Axys"><div class="line"></div></div>
+  <div id="bar"></div>
+</div>
+
+<script>
+  const DUR = 30;
+  const scenes = [["s1", 0, 6], ["s2", 6, 12], ["s3", 12, 18.5], ["s4", 18.5, 23.5], ["s5", 23.5, 30.5]];
+  const ease = x => 1 - Math.pow(1 - Math.min(Math.max(x, 0), 1), 3);
+  const clamp = x => Math.min(Math.max(x, 0), 1);
+
+  window.render = function (t) {
+    document.getElementById("bg").style.transform =
+      `translate(${Math.sin(t / 5) * 60}px, ${Math.cos(t / 6) * 50}px) scale(${1 + 0.05 * Math.sin(t / 4)})`;
+    for (const [id, a, b] of scenes) {
+      const s = document.getElementById(id);
+      const o = clamp((t - a) / 0.3) * (1 - clamp((t - (b - 0.4)) / 0.4));
+      s.style.opacity = o;
+      s.style.transform = `translateY(${-(1 - clamp((b - t) / 0.4)) * 40}px)`;
+      for (const e of s.querySelectorAll(".el")) {
+        const p = ease((t - parseFloat(e.dataset.in)) / 0.6);
+        const dx = parseFloat(e.dataset.dx || 0);
+        e.style.opacity = p;
+        e.style.transform = dx ? `translateX(${dx * (1 - p) * 120}px)` : `translateY(${(1 - p) * 50}px)`;
+      }
+    }
+    document.getElementById("foot").style.opacity = t < 23.5 ? 1 : 1 - clamp((t - 23.5) / 0.4);
+    document.getElementById("bar").style.width = (t / DUR * 100) + "%";
+  };
+  render(0);
+</script>
+</body>
+</html>

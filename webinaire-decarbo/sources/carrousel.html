@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Carrousel webinaire Axys x Decarbo'Solution</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --vert: #008A8C; --fonce: #004C5D; --clair: #02AEB1; --grenade: #FF2148;
+    --gris: #404148; --grisclair: #F2F2F2; --blanc: #FFFFFF;
+  }
+  @page { size: 794px 1123px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Montserrat', sans-serif; color: var(--blanc); background: var(--fonce); }
+  .page {
+    width: 794px; height: 1123px; position: relative; overflow: hidden;
+    padding: 96px 64px 0;
+    background: radial-gradient(ellipse 90% 70% at 60% 45%, #02AEB1 0%, #008A8C 38%, #004C5D 100%);
+    page-break-after: always;
+  }
+  .kicker { font-size: 15px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--clair); filter: brightness(1.45); margin-bottom: 14px; }
+  .kicker b { color: var(--grenade); filter: none; font-weight: 700; }
+  h1 { font-size: 54px; line-height: 1.12; font-weight: 800; text-transform: uppercase; }
+  h2 { font-size: 42px; line-height: 1.15; font-weight: 800; text-transform: uppercase; }
+  p.lead { font-size: 21px; line-height: 1.55; font-weight: 500; margin-top: 36px; }
+  .card { background: rgba(255,255,255,.10); border-radius: 12px; padding: 32px 30px; }
+  .card h3 { font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 10px; }
+  .card p { font-size: 17px; line-height: 1.55; font-weight: 400; }
+  .footer { position: absolute; left: 64px; right: 64px; bottom: 44px; display: flex; align-items: center; gap: 22px; }
+  .footer .line { flex: 1; height: 1px; background: rgba(255,255,255,.55); }
+  .footer img { height: 26px; }
+  .footer .num { font-size: 12px; font-weight: 600; letter-spacing: .05em; }
+  .chevrons { position: absolute; right: 64px; bottom: 48px; font-size: 30px; font-weight: 300; letter-spacing: -4px; opacity: .9; }
+
+  /* Page 1 */
+  .p1 .logo { display: block; height: 48px; margin: 0 auto 190px; }
+  .p1 .pre { font-size: 34px; color: #9CE6E7; }
+  .p1 .date { display: inline-block; margin-top: 56px; background: var(--blanc); color: var(--fonce); border-radius: 40px; padding: 18px 34px; font-size: 21px; font-weight: 700; }
+  .p1 .duo { margin-top: 30px; font-size: 18px; font-weight: 600; letter-spacing: .03em; }
+
+  /* Page 2 */
+  .grid3 { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 60px; }
+  .grid3 .card { display: grid; grid-template-columns: 76px 1fr; align-items: center; column-gap: 24px; }
+  .ico { width: 76px; height: 76px; border-radius: 50%; background: rgba(255,255,255,.16); display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 800; }
+  .bandeau { margin-top: 48px; background: var(--blanc); color: var(--fonce); border-radius: 10px; padding: 28px 30px; font-size: 19px; font-weight: 600; line-height: 1.5; }
+  .bandeau b { color: var(--vert); }
+
+  /* Page 3 */
+  .trio { margin-top: 60px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .trio .card { text-align: center; padding: 42px 16px; }
+  .trio .card .n { font-size: 48px; font-weight: 800; color: #9CE6E7; margin-bottom: 8px; }
+  .trio .card p { font-size: 19px; font-weight: 600; line-height: 1.4; }
+  .usages { margin-top: 50px; }
+  .usages .titre { font-size: 19px; font-weight: 700; margin-bottom: 18px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { border: 1.5px solid rgba(255,255,255,.7); border-radius: 30px; padding: 11px 22px; font-size: 17px; font-weight: 600; }
+  .note { margin-top: 50px; background: rgba(0,76,93,.55); border-radius: 10px; padding: 24px 28px; font-size: 16px; line-height: 1.55; }
+  .note b { font-weight: 700; }
+  .source { position: absolute; left: 64px; right: 64px; bottom: 96px; font-size: 11px; opacity: .8; line-height: 1.4; }
+
+  /* Page 4 */
+  .prog { margin-top: 50px; display: flex; flex-direction: column; gap: 18px; }
+  .prog .card { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: center; padding: 26px 28px; }
+  .prog .card .k { font-size: 32px; font-weight: 800; color: #9CE6E7; }
+  .prog .card p { font-size: 19px; font-weight: 600; line-height: 1.4; }
+  .bonus { margin-top: 24px; font-size: 16px; font-weight: 500; }
+  .cta { display: inline-block; margin-top: 36px; background: var(--blanc); color: var(--fonce); border-radius: 40px; padding: 18px 36px; font-size: 20px; font-weight: 800; }
+  .speakers { margin-top: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .sp { display: flex; gap: 14px; align-items: center; }
+  .sp img, .sp .ph { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; flex: none; }
+  .sp .ph { background: rgba(255,255,255,.18); display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center; font-weight: 600; }
+  .sp .nom { font-size: 18px; font-weight: 700; }
+  .sp .role { font-size: 14px; font-weight: 500; opacity: .9; margin-top: 3px; line-height: 1.35; }
+  .logos { position: absolute; left: 64px; right: 64px; bottom: 44px; display: flex; align-items: center; justify-content: center; gap: 26px; }
+  .logos img { height: 34px; }
+  .logos .x { font-size: 22px; font-weight: 300; }
+  .logos .ph { border: 1.5px dashed rgba(255,255,255,.75); border-radius: 6px; padding: 10px 16px; font-size: 14px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 : ACCROCHE -->
+<section class="page p1">
+  <img class="logo" src="logo_axys.png" alt="Axys">
+  <div class="kicker">Webinar · Axys × Decarbo'Solution</div>
+  <h1><span class="pre">Données fournisseurs</span><br>Collectez moins,<br>exploitez mieux</h1>
+  <p class="lead">Combien de questionnaires durabilité envoyez-vous à vos fournisseurs chaque année ?<br>Et combien de réponses sauriez-vous <b>prouver</b> ?</p>
+  <div class="date">Mardi 24 novembre 2026 · 11h · en ligne</div>
+  <div class="duo">45 min d'échange + 15 min de questions</div>
+  <div class="chevrons">›››</div>
+</section>
+
+<!-- PAGE 2 : LE CONSTAT -->
+<section class="page">
+  <div class="kicker">Le constat</div>
+  <h2>Vos données fournisseurs existent.<br>Sont-elles utilisables ?</h2>
+  <div class="grid3">
+    <div class="card"><div class="ico">1</div><div><h3>Dispersées</h3><p>Outil achats, fichiers Excel, mails, plateformes, équipe RSE : la même information vit à plusieurs endroits.</p></div></div>
+    <div class="card"><div class="ico">2</div><div><h3>Hétérogènes</h3><p>Chaque questionnaire a son format et son niveau de détail. Les réponses ne se comparent pas.</p></div></div>
+    <div class="card"><div class="ico">3</div><div><h3>Peu réutilisables</h3><p>Une demande, un usage. Puis on recommence, et le fournisseur aussi.</p></div></div>
+  </div>
+  <div class="bandeau">Le VS, nouveau format du VSME, pose un cadre commun sur <b>ce qu'il faut demander</b>.<br>Reste à savoir comment le prouver, puis le réutiliser.</div>
+  <div class="footer"><div class="line"></div><img src="logo_axys.png" alt="Axys"><div class="line"></div><div class="num">02 / 04</div></div>
+</section>
+
+<!-- PAGE 3 : L'ENJEU -->
+<section class="page">
+  <div class="kicker">L'enjeu</div>
+  <h2>Demain, un auditeur regardera trois choses</h2>
+  <div class="trio">
+    <div class="card"><div class="n">?</div><p>Ce que vous collectez</p></div>
+    <div class="card"><div class="n">?</div><p>Comment c'est connecté</p></div>
+    <div class="card"><div class="n">?</div><p>Comment c'est contrôlé</p></div>
+  </div>
+  <div class="usages">
+    <div class="titre">Et une même donnée peut servir plusieurs usages :</div>
+    <div class="chips"><span class="chip">CSRD · Scope 3</span><span class="chip">Audit</span><span class="chip">Pilotage fournisseurs</span><span class="chip">Coût carbone · ETS, CBAM</span><span class="chip">Appels d'offres</span></div>
+  </div>
+  <div class="note"><b>Repère :</b> l'ISSA 5000 devient la référence internationale de l'assurance durabilité en décembre 2026 (périodes ouvertes à partir du 15 décembre). Ce que l'auditeur attendra de vos données se précise.</div>
+  <div class="source">Source : IAASB, ISSA 5000, date d'application (synthèse ICAEW).</div>
+  <div class="footer"><div class="line"></div><img src="logo_axys.png" alt="Axys"><div class="line"></div><div class="num">03 / 04</div></div>
+</section>
+
+<!-- PAGE 4 : RENDEZ-VOUS -->
+<section class="page">
+  <div class="kicker">Le 24 novembre à 11h</div>
+  <h2>Trois questions,<br>deux voix, une heure</h2>
+  <div class="prog">
+    <div class="card"><div class="k">01</div><p>Pourquoi une donnée calculée ne suffit plus</p></div>
+    <div class="card"><div class="k">02</div><p>Ce qui rend une donnée carbone authentifiée, tracée, reproductible</p></div>
+    <div class="card"><div class="k">03</div><p>Comment la réutiliser dans vos outils achats</p></div>
+  </div>
+  <div class="bonus">Sondage en direct · Checklist des 5 premiers pas remise aux inscrits</div>
+  <div class="cta">Je m'inscris →</div>
+  <div class="speakers">
+    <div class="sp"><img src="photo_maeva.png" alt=""><div><div class="nom">Maëva Signor</div><div class="role">Senior Manager Achats<br>Axys</div></div></div>
+    <div class="sp"><div class="ph">Photo</div><div><div class="nom">Philippe Mangeard</div><div class="role">[Fonction à confirmer]<br>Decarbo'Solution</div></div></div>
+  </div>
+  <div class="logos"><img src="logo_axys.png" alt="Axys"><span class="x">×</span><span class="ph">Logo Decarbo'Solution</span></div>
+</section>
+
+</body>
+</html>
